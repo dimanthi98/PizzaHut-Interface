@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="viewport" content="width-device-width, initial-scale-1">
+        <title>PizzaHut</title>
+        <link rel="stylesheet" href="main.css">
+        <!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@200;300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--for mobile respod the website **fa icon website** -->
+    </head>
+
+    <body>
+        <!-- Header -->
+        <section class="header">
+            <nav>
+                <a href="#" class="loginBtn">Sign In / Register</a>
+                <div class="tab">
+                    <button class="tablinks" onclick="serve(event, 'Delivery')"><i class="fa fa-motorcycle" aria-hidden="true"></i> Delivery</button>
+                    <button class="tablinks" onclick="serve(event, 'Takeaway')"><i class="fa fa-male" aria-hidden="true"></i> Takeaway</button>
+                </div>
+            </nav>
+        </section>
+          <div id="Delivery" class="tabcontent service">
+            <input type="text" id="del" name="del" placeholder="Enter your delivery location" class="ser-sech">
+            <a href="#"><i class="fa fa-search ser-btn" aria-hidden="true">Search</i></a>
+          </div>
+          
+          <div id="Takeaway" class="tabcontent service">
+            <input type="text" id="del" name="del" placeholder="Enter your takeaway location" class="ser-sech">
+            <a href="#"><i class="fa fa-search ser-btn" aria-hidden="true">Search</i></a>
+          </div>
+          
+          <script>
+          function serve(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+          </script>
+        <!-- End Header -->
+
+
+        <!-- Body Content -->
+        <div class="b-sec">
+            <div class="body-row">
+                <ul>
+                    <li><hr></li>
+                    <li><h3>Our Most Popular Deals</h3></li>
+                    <li><hr></li>
+                </ul>
+            </div>
+            <div class="pic">
+                <div class="imgst">
+                    <ul>
+                        <li><a href="#"><img src="img/01.jpg" style="margin-right: 35px; margin-top: 30px;" alt=""></a></li>
+                        <li><a href="#"><img src="img/02.jpg" style="margin-top: 30px;" alt=""></a></li>
+                        <li><a href="#"><img src="img/03.jpg" style="margin-right: 35px;" alt=""></a></li>
+                        <li><a href="#"><img src="img/04.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="viewbtn">
+                <a href="#">View all deals</a>
+            </div>
+        </div>
+        <!-- End Body Content -->
+
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="f-row">
+                <div class="f-col">
+                    <ul>
+                        <li class="col-top">Order Now</li>
+                        <li><a href="#">PROMOS</a></li>
+                        <li><a href="#">PIZZAS</a></li>
+                        <li><a href="#">PASTAS</a></li>
+                        <li><a href="#">APPETIZERS</a></li>
+                        <li><a href="#">RICE</a></li>
+                        <li><a href="#">DESSERTS</a></li>
+                        <li><a href="#">BEVERAGES</a></li>
+                    </ul>
+                </div>
+                <div class="f-col">
+                    <ul>
+                        <li class="col-top">About</li>
+                        <li><a href="#">CAREERS</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">FEEDBACK</a></li>
+                        <li><a href="#">HOTLINE</a></li>
+                    </ul>
+                </div>
+                <div class="f-col">
+                    <ul>
+                        <li class="col-top">Policy</li>
+                        <li><a href="#">TERMS & CONDITIONS</a></li>
+                        <li><a href="#">PRIVACY POLICY</a></li>
+                    </ul>
+                </div>
+                <div class="f-col">
+                    <ul>
+                        <li class="col-top" style="padding-right: 0px;">My Pizza Hut</li>
+                        <li style="padding-right: 0px;"><a href="#">SIGN IN / REGISTER</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact">
+                <p>Find Us on Social Media</p>
+                <a href="#"><i class="fa fa-facebook so-icon" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram so-icon" aria-hidden="true"></i></a>
+                <h5>® 2022 Pizza Hut, Inc. All rights reserved. The Pizza Hut name, logos, and related marks are trademarks of Pizza Hut, Inc.</h5>
+            </div>
+        </div>
+        <!-- End Footer -->
+    </body>
+</html>

@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+
+.header{
+    min-height: 40vh;
+    width: 100%;
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.loginBtn{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    border: 0.5px solid #70a401;
+    background-color: #70a401;
+    color: #FFFFFF;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin-left: 1105px;
+    margin-top: 20px;
+}
+
+.loginBtn:hover{
+    background-color: #557c01;
+    color: #dad2d2;
+    transition: 0.5s;
+}
+
+        /* Tab buttons */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 378px;
+    height: 45px;
+    margin-top: 153px;
+    margin-left: 500px;
+  }
+  
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 55px;
+    transition: 0.3s;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  
+  .tab button:hover {
+    background-color: #ddd;
+    color: rgb(233, 36, 36);
+  }
+  
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+  .tablinks i{
+      border: 1px solid #272727;
+      border-radius: 50%;
+      padding: 3px;
+  }
+  
+  .ser-sech{
+      padding: 10px 50px;
+      margin-top: 10px;
+      margin-left: 10px;
+      width: 230px;
+      border: none;
+      display: flex;
+      background-color: #eeeeee;
+      font-weight: bolder;
+      letter-spacing: 1px;
+  }
+  
+  .ser-btn{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 150px;
+      width: 180px;
+      margin-top: 15px;
+      margin: 10px 10px;
+      display: flex;
+      color: #ffffff;
+      background-color: #70a401;
+  }
+  
+  .ser-btn:hover{
+      background-color: #557c01;
+      color: #dad2d2;
+      transition: 0.5s;
+  }
+  
+  .service {
+      margin-left: 500px;
+      width: 380px;
+      height: 120px;
+      padding-top: 5px;
+      background-color: #ffffff;
+      box-sizing: border-box;
+      box-shadow: 0px 10px 20px 2px #cecbcb;
+  }
+
+/* ------------------------------------------- */
+/* Body Content */
+.b-sec{
+    margin: 170px 100px;
+    margin-top: 150px;
+    margin-bottom: 30px;
+    margin-left: 85px;
+}
+
+.body-row ul li{
+    list-style: none;
+    display: inline-block;
+    color: #3d3a3a;
+    font-weight: bold;
+}
+
+.body-row ul li hr{
+    width: 494px;
+    height: 1px;
+    background-color: #272727;
+}
+
+        /* img set */
+.imgst ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.pic img{
+    width: 555px;
+    min-width: 270px;
+    margin-bottom: 27px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px -2px #bbb7b7;
+}
+
+        /* View all btn */
+.viewbtn a{
+    text-decoration: none;
+    text-align: center;
+    background-color: #70a401;
+    font-size: 15px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: #ffffff;
+    display: flex;
+    padding-left: 530px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.viewbtn a:hover{
+    background-color: #557c01;
+    color: #dad2d2;
+    transition: 0.5s;
+}
+
+/* -------------------------------------------------------- */
+        /* Footer */
+
+.footer{
+    width: 100%;
+    height: 450px;
+    background-color: #272727;
+}
+
+.f-row{
+    display: flex;
+    margin-left: 130px;
+    margin-right: 150px;
+}
+
+.f-col{
+    margin-top: 60px;
+}
+
+.f-col ul li{
+    list-style: none;
+    padding-top: 5px;
+    padding-right: 235px;    
+}
+
+.col-top{
+    display: flex;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.f-col ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.f-col ul li a:hover{
+    color: #d4cfcf;
+    transition: 0.5s;
+}
+
+.contact{
+    margin-top: 0px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.so-icon{
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    padding: 4px;
+    margin-left: 5px;
+    background-color: #eeeeee;
+}
+
+.contact p{
+    color: #FFFFFF;
+    font-weight: bold;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.contact h5{
+    color: #eeeeee;
+    font-weight: 500;
+    padding-top: 10px;
+}
