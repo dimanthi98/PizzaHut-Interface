@@ -1,0 +1,70 @@
+
+ /* media query for mobile respond */
+ @media(max-width:700px){
+    .loginBtn{
+        font-size: 10px;
+        padding: 7px 7px;
+        margin-left: 370px;
+    }
+
+    .tab{
+        margin-left: 50px;
+    }
+
+    .tab button{
+        font-size: 8px;
+        font-size: 17px;
+    }
+
+    .ser-sech{
+        width: 310px;
+        padding: 10px 10px;
+    }
+
+    .ser-btn{
+        width: 310px;
+        padding: 10px 10px;
+    }
+
+    .service{
+        margin-left: 50px;
+        width: 380px;
+    }
+
+    .b-sec{
+        margin-left: 10px;
+       
+    }
+
+    .body-row ul li hr{
+        width: 101px;
+    }
+
+    .pic img{
+        width: 460px;
+    }
+
+    .viewbtn a{
+        width: 75%;
+        padding-left: 180px;
+    }
+
+    .footer{
+        width: 100%;
+    }
+
+    .f-col{
+        float: none;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .f-row{
+        margin-left: 30px;
+    }
+
+    .f-col ul li{
+        padding-right: 15px;    
+    }
+
+}
